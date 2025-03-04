@@ -49,7 +49,7 @@
         </address>
       </div>
     </header> -->
-    <header class="header">
+    <header class="header" style="box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);">
       <div class="container header-container">
         <nav class="menu-nav">
           <a href="./index.html" class="header-logo">
@@ -57,25 +57,28 @@
           </a>
           <ul class="menu">
             <li class="menu-list-item">
-              <a href="./index.html" class="menu-list active-link">Studio</a>
+              <a href="./index.html" class="menu-list active-link" style="position: relative; color: #404bbf; transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);">
+                Studio
+                <span style="content: ''; width: 100%; height: 4px; background-color: #404bbf; border-radius: 2px; position: absolute; left: 0; bottom: -1px;"></span>
+              </a>
             </li>
             <li class="menu-list-item">
-              <a href="" class="menu-list">Portfolio</a>
+              <a href="" class="menu-list" style="transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);">Portfolio</a>
             </li>
             <li class="menu-list-item">
-              <a href="" class="menu-list">Contacts</a>
+              <a href="" class="menu-list" style="transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);">Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="contact_information">
           <ul class="contact">
             <li>
-              <a href="mailto:info@devstudio.com" class="contact_list">
+              <a href="mailto:info@devstudio.com" class="contact_list" style="transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);">
                 info@devstudio.com
               </a>
             </li>
             <li>
-              <a href="tel:+110001111111" class="contact_list">
+              <a href="tel:+110001111111" class="contact_list" style="transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);">
                 +11 (000) 111-11-11
               </a>
             </li>
@@ -83,6 +86,7 @@
         </address>
       </div>
     </header>
+    
   
     <main>
       <section class="section-bir">
@@ -144,55 +148,161 @@
           </ul>
         </div>
       </section>
-      <section class="section-uc">
+      <section class="our_team-section">
         <div class="container">
-          <h2 class="baslik-iki">Our Team</h2>
-          <ul class="team-list">
-            <li class="list-uc">
-              <div class="team-image-container">
-                <img src="./images/1.jpg" alt="Mark Guerrero Resmi" width="264" height="260" />
-              </div>
-              <div class="team-member">
-                <h3 class="baslik-uc">Mark Guerrero</h3>
-                <p class="parag-bir">Product Designer</p>
-                <div class="social-container">
-                  <ul class="social-list">
-                    <li class="social-item">
-                      <a href="#" class="social-link">
-                        <svg class="social-icon" width="16" height="16">
-                          <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-item">
-                      <a href="#" class="social-link">
-                        <svg class="social-icon" width="16" height="16">
-                          <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-item">
-                      <a href="#" class="social-link">
-                        <svg class="social-icon" width="16" height="16">
-                          <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-item">
-                      <a href="#" class="social-link">
-                        <svg class="social-icon" width="16" height="16">
-                          <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <!-- Benzer şekilde diğer takım üyeleri de eklenmiştir. -->
-          </ul>
+            <h2 class="our_team_title">Our Team</h2>
+            <ul class="our-team">
+                <li class="our_team_list">
+                    <img src="./images/1.jpg" alt="Mark Guerrero Product Designer" width="264">
+                    <div class="our-team-box">
+                        <h3 class="our_team_sub_title">Mark Guerrero</h3>
+                        <p class="our_team_content">Product Designer</p>
+                        <ul class="our-team-social">
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-Vector"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="our_team_list">
+                    <img src="./images/2.jpg" alt="Tom Ford Frontend Developer" width="264">
+                    <div class="our-team-box">
+                        <h3 class="our_team_sub_title">Tom Ford</h3>
+                        <p class="our_team_content">Frontend Developer</p>
+                        <ul class="our-team-social">
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-Vector"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="our_team_list">
+                    <img src="./images/3.jpg" alt="Camila Garcia" width="264">
+                    <div class="our-team-box">
+                        <h3 class="our_team_sub_title">Camila Garcia</h3>
+                        <p class="our_team_content">Marketing</p>
+                        <ul class="our-team-social">
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-Vector"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="our_team_list">
+                    <img src="./images/4.jpg" alt="Daniel Wilson UI Designer" width="264">
+                    <div class="our-team-box">
+                        <h3 class="our_team_sub_title">Daniel Wilson</h3>
+                        <p class="our_team_content">UI Designer</p>
+                        <ul class="our-team-social">
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-Vector"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-social-list">
+                                <a href="#" class="team-social-link">
+                                    <svg width="16" height="16" class="social-svg">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </section>
+    </section>
       
       <section class="section-dort">
         <div class="container">
