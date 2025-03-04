@@ -690,16 +690,7 @@ background-color: #4d5ae5
   background-color: #2e2e2e;
   padding: 40px 0;
 }
-footer a{
-font-family: "Raleway",sans-serif;
-font-weight: 700;
-font-size: 18px;
-line-height: 21px;
-letter-spacing: 3%;
-color:#4D5AE5;
-display: inline-block;
-margin-bottom: 16px;	
-}
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -752,7 +743,13 @@ margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.footer-social-link:hover{
+  background-color: #31d0aa;
+}
+.footer-social-link:focus{
+  background-color: #31d0aa;
 }
 
 .footer-icon {
@@ -771,3 +768,4 @@ line-height: 24px;
 letter-spacing: 0.02em;
 color:#F4F4FD
 }
+
